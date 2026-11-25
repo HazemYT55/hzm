@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZM</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        :root {
+            --bg: #0d0b1a;
+            --card: #171430;
+            --border: #2c2753;
+            --purple: #8b5cf6;
+            --soft: #c4b5fd;
+            --text: #e8e6f5;
+            --muted: #9a96b8;
+        }
+
+        body {
+            margin: 0;
+            padding: 48px 16px;
+            background: radial-gradient(circle at 50% -10%, #2a1a5e, var(--bg) 55%);
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        main { max-width: 760px; margin: 0 auto; }
+
+        h1 {
+            margin: 0 0 32px;
+            text-align: center;
+            font-size: clamp(36px, 9vw, 64px);
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, #a78bfa, #f0abfc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h2 { margin: 0 0 14px; font-size: 22px; color: var(--soft); }
+
+        .card {
+            margin-bottom: 20px;
+            padding: 24px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+
+        .card p { margin: 0; color: var(--muted); }
+
+        .tags, .buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+
+        .tag {
+            padding: 5px 14px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: #211c45;
+            color: var(--soft);
+            font-size: 14px;
+        }
+
+        .project {
+            padding: 18px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #2b1d63, #1d1840);
+            border: 1px solid var(--purple);
+        }
+
+        .project h3 { margin: 0 0 6px; font-size: 24px; }
+
+        .btn {
+            padding: 10px 22px;
+            border-radius: 12px;
+            background: var(--purple);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform .15s, background .15s;
+        }
+
+        .btn:hover { transform: translateY(-2px); background: #a07bff; }
+
+        .btn-alt { background: transparent; border: 1px solid var(--purple); color: var(--soft); }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 12px;
+        }
+
+        .feature {
+            padding: 16px;
+            background: #1d1840;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+
+        .feature h3 { margin: 0 0 6px; color: #fff; font-size: 18px; }
+        .feature p { font-size: 15px; }
+
+        footer { text-align: center; margin-top: 32px; }
+        footer a { color: var(--soft); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Hello, I'm <span>HZM</span></h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>I'm a programmer and content creator. I love programming and creativity, and I'm building my own web language.</p>
+<div class="tags">
+                <span class="tag">Programming</span>
+                <span class="tag">Content Creation</span>
+                <span class="tag">Minecraft</span>
+                <span class="tag">Demon Slayer</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>The WebLang</h3>
+                <p>WebLang = BTW + STW + MTWC. Replaces HTML, CSS & JS with 3 simple files. Clean syntax, short tags, learn in minutes. 🚀</p>
+            </div>
+            <div class="buttons">
+                <a class="btn" href="https://hazemyt55.github.io/The-WebLang/IDE.html">Open Editor</a>
+                <a class="btn btn-alt" href="https://hazemyt55.github.io/The-WebLang/docs.html">Read Docs</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>WebLang Features</h2>
+            <div class="features">
+                <div class="feature"><h3>BTW</h3><p>Base Text Web. Replaces HTML for page structure.</p></div>
+                <div class="feature"><h3>STW</h3><p>Style The Web. Replaces CSS for style.</p></div>
+                <div class="feature"><h3>MTWC</h3><p>Make The Web Click. Replaces JavaScript for logic.</p></div>
+                <div class="feature"><h3>10 languages</h3><p>A family of 10 simple languages, with a built-in IDE and docs.</p></div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://github.com/HazemYT55/The-WebLang">GitHub: The-WebLang</a>
+        </footer>
+    </main>
+</body>
+
+</html>
